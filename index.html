@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Web</h1>
+    </header>
+
+    <form id="form_calculadora" action="calculadora.php" method="post">
+        <h2>Calcula tu operación</h2>
+        <!-- Ingresar el primer valor -->
+        <input class="caja" type="number" name="num1" placeholder="Introduce el primer número:" required><br>
+        <select name="operacion" id="operacion" class="caja">
+            <option value="+">Suma +</option>
+            <option value="-">Resta -</option>
+            <option value="*">Multiplicación *</option>
+            <option value="/">División /</option>
+        </select><br>
+        <!-- Ingresar el segundo valor-->
+        <input class="caja" type="number" name="num2" placeholder="Introduce el segundo número:" required><br>
+        <!-- Boton Calcular-->
+        <input id="boton_calcular" type="submit" name="calcular" value="Calcular">
+    </form>
+
+    <footer>
+        <ul>
+            <li>Dolly Fernanda Sarmiento Quintana</li>
+            <li><a href="mailto:dosaqu@alumnatflorida.es">dosaqu@alumnatflorida.es</a></li>
+            <li>Despliegue de Aplicaciones Web</li>
+            <li><a href="https://www.floridauniversitaria.es/">Florida Universitaria</a></li>
+    </footer>
+      
+</body>
+</html>
